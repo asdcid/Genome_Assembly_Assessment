@@ -1,5 +1,7 @@
 # Genome_Assembly_Assessment
 
+This pipeline was used for different assembly assessments in this paper (doi: https://doi.org/10.1101/678730).
+
 **gaa.sh**: Scripts for genome assembly assessment. Detect general genome statistical information, BUSCO, LAI, CGAL, mapping rate and base-level error rate, and structure variation. The result can be used for comparing different genome assemblies. 
 
 **whole_genome_alignment.sh**: Script for whole genome alignment between two genome assemblies.
