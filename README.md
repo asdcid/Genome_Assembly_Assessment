@@ -7,7 +7,7 @@
 ## Install
 
 ```
-git clone 
+git clone https://github.com/asdcid/Genome_Assembly_Assessment.git
 conda create -n GAA
 source activate GAA
 
