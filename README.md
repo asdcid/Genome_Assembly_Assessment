@@ -106,8 +106,11 @@ Options:
 ## Test
 ```
 cd test_data
-tar -zxvf 
+# bacteria_odb9.tar.gz is the database for BUSCO analysis (E.coli)
+tar -zxvf bacteria_odb9.tar.gz
 cd ..
+
+
 ./gas.sh \
     -g test_data/genome/E.coli_K12_MG1655.fa \
     -o test \
