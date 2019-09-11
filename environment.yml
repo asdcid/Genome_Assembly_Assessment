@@ -33,7 +33,7 @@ dependencies:
   - blast=2.2.31=1
   - boost=1.68.0=py27h8619c78_1001
   - boost-cpp=1.68.0=h11c811c_1000
-  - bowtie2=2.3.4.1=py27h2d50403_1
+  - bowtie2=2.3.4.3=py27he860b03_1
   - busco=3.0.2=py27_10
   - bwidget=1.9.11=1
   - bzip2=1.0.8=h7b6447c_0
