@@ -1,4 +1,4 @@
-name: asc
+name: GAA
 channels:
   - bioconda/label/cf201901
   - r
