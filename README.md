@@ -122,6 +122,7 @@ bash gaa.sh \
     -l test_data/reads/long_read.fastq.gz \
     -A test_data/bacteria_odb9 
 ```
+NOTE: it is just a test, the structure variation and LAI will return no result because of the small dataset.
 
 ```
 outputDir='test_wholeGenomeAlignment'
