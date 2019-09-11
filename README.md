@@ -1,6 +1,6 @@
 # Genome_Assembly_Assessment
 
-**gas.sh**: Scripts for genome assembly assessment. Detect general genome statistical information, BUSCO, LAI, CGAL, mapping rate and base-level error rate, and structure variation. The result can be used for comparing different genome assemblies. 
+**gaa.sh**: Scripts for genome assembly assessment. Detect general genome statistical information, BUSCO, LAI, CGAL, mapping rate and base-level error rate, and structure variation. The result can be used for comparing different genome assemblies. 
 
 **whole_genome_alignment.sh**: Script for whole genome alignment between two genome assemblies.
 
@@ -31,7 +31,7 @@ git clone https://github.com/oushujun/LTR_retriever.git
 The repeatMasker is required for LAI analysis. It is needed to install manually (http://www.repeatmasker.org/RMDownload.html)
 
 ## Usage
-**gas.sh**
+**gaa.sh**
 ```
 [Script for genome assembly assessment. Detect general genome statistical information, BUSCO, LAI, CGAL, mapping rate and base-level error rate, and structure variation]
 NOTE:
@@ -41,7 +41,7 @@ The following assessment methods required long or short-reads.
     mapping rate and base-level error rate      Long or short-reads
 
 
-Usage: bash run.sh -g genome.fa -o outputDir [options]
+Usage: bash gaa.sh -g genome.fa -o outputDir [options]
 General:
     -g <file>
             Path of genome, in fasta format. Required.
@@ -105,6 +105,23 @@ Options:
 
 ## Test
 ```
+cd test_data
+tar -zxvf 
+cd ..
 ./gas.sh \
-  -g test_data/
+    -g test_data/genome/E.coli_K12_MG1655.fa \
+    -o test \
+    -1 test_data/reads/short_read_1.fastq.gz \
+    -2 test_data/reads/short_read_2.fastq.gz \
+    -l test_data/reads/long_read.fastq.gz \
+    -A test_data/bacteria_odb9 \
+```
+
+```
+outputDir='test_wholeGenomeAlignment'
+mkdir -p $outputDir
+./whole_genome_alignment.sh \
+    -r test_data/genome/E.coli_K12_MG1655.fa \
+    -q test_data/genome/E.coli_K12_MG1655.fa \
+    -o $outputDir/test
 ```
