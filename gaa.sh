@@ -275,7 +275,7 @@ function run_basic_stats
     ref=$1 
     outputFile=$2
     script=$3
-    $script $ref > $outputFile
+    python $script $ref > $outputFile
     run_or_die $? 'basic_stats'
 }
 
@@ -291,7 +291,7 @@ function run_BUSCO
 
     cd $outputDir
     run_or_die $? ''
-    busco \
+    run_busco \
         -i $ref \
         -o 'BUSCO' \
         -l $lineage \
