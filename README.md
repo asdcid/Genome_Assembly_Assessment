@@ -10,7 +10,8 @@ This pipeline was used for different assembly assessments in this paper (doi: ht
 
 ```
 git clone https://github.com/asdcid/Genome_Assembly_Assessment.git
-conda create -n GAA
+cd Genome_Assembly_Assessment
+conda env create -f environment.yaml
 source activate GAA
 
 #install CGAL
