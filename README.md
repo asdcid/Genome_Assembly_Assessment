@@ -114,19 +114,19 @@ tar -zxvf bacteria_odb9.tar.gz
 cd ..
 
 
-./gas.sh \
+bash gaa.sh \
     -g test_data/genome/E.coli_K12_MG1655.fa \
     -o test \
     -1 test_data/reads/short_read_1.fastq.gz \
     -2 test_data/reads/short_read_2.fastq.gz \
     -l test_data/reads/long_read.fastq.gz \
-    -A test_data/bacteria_odb9 \
+    -A test_data/bacteria_odb9 
 ```
 
 ```
 outputDir='test_wholeGenomeAlignment'
 mkdir -p $outputDir
-./whole_genome_alignment.sh \
+bash whole_genome_alignment.sh \
     -r test_data/genome/E.coli_K12_MG1655.fa \
     -q test_data/genome/E.coli_K12_MG1655.fa \
     -o $outputDir/test
