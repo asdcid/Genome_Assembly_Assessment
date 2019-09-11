@@ -12,7 +12,7 @@ The following assessment methods required long or short-reads.
     mapping rate and base-level error rate      Long or short-reads
     
 
-Usage: bash run.sh -g genome.fa -o outputDir [options]
+Usage: bash gaa.sh -g genome.fa -o outputDir [options]
 General:
     -g <file>
             Path of genome, in fasta format. Required.
