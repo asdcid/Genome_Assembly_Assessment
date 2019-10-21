@@ -43,7 +43,7 @@ NOTE:
 The following assessment methods required long or short-reads.
     CGAL                                        Short-reads (illumina)
     Structural variation                        Long-reads  (pacbio or ont)
-    mapping rate and base-level error rate      Long or short-reads
+    mapping rate and base-level error rate      Long or/and short-reads
 
 
 Usage: bash gaa.sh -g genome.fa -o outputDir [options]
