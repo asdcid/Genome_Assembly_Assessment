@@ -11,6 +11,8 @@ This pipeline was used for different assembly assessments in this paper (doi: ht
 ```
 git clone https://github.com/asdcid/Genome_Assembly_Assessment.git
 cd Genome_Assembly_Assessment
+
+#conda is required to install first. How to install conda: https://docs.anaconda.com/anaconda/install/
 conda env create -f environment.yml
 source activate GAA
 
